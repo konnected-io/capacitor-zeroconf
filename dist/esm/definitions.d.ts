@@ -33,7 +33,7 @@ export type ZeroConfWatchResult = {
 };
 export type ZeroConfWatchCallback = (event: ZeroConfWatchResult) => void;
 export interface ZeroConfPlugin {
-    addListener(eventName: 'discover', listenerFunc: (result: ZeroConfWatchResult) => void): PluginListenerHandle;
+    addListener(eventName: 'discover', listenerFunc: (result: ZeroConfWatchResult) => void): Promise<PluginListenerHandle>;
     getHostname(): Promise<{
         hostname: string;
     }>;

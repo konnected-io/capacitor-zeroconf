@@ -7,7 +7,7 @@
     "methods": [
       {
         "name": "addListener",
-        "signature": "(eventName: 'discover', listenerFunc: (result: ZeroConfWatchResult) => void) => PluginListenerHandle",
+        "signature": "(eventName: 'discover', listenerFunc: (result: ZeroConfWatchResult) => void) => Promise<PluginListenerHandle>",
         "parameters": [
           {
             "name": "eventName",
@@ -20,14 +20,14 @@
             "type": "(result: ZeroConfWatchResult) => void"
           }
         ],
-        "returns": "PluginListenerHandle",
+        "returns": "Promise<PluginListenerHandle>",
         "tags": [],
         "docs": "",
         "complexTypes": [
           "PluginListenerHandle",
           "ZeroConfWatchResult"
         ],
-        "slug": "addlistenerdiscover"
+        "slug": "addlistenerdiscover-"
       },
       {
         "name": "getHostname",

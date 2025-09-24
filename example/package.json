@@ -11,13 +11,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@capacitor/core": "latest",
-    "@capacitor/camera": "latest",
-    "@capacitor/splash-screen": "latest",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/camera": "^7.0.0",
+    "@capacitor/splash-screen": "^7.0.0",
     "capacitor-zeroconf": "file:.."
   },
   "devDependencies": {
-    "@capacitor/cli": "latest"
+    "@capacitor/cli": "^7.0.0"
   },
   "author": "",
   "license": "ISC"
